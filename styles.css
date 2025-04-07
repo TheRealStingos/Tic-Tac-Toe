@@ -1,3 +1,77 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.player-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Turn indicator styles */
+.turn-indicator {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.turn-indicator.x {
+    color: #e74c3c;
+    border-left: 5px solid #e74c3c;
+}
+
+.turn-indicator.o {
+    color: #f39c12;
+    border-left: 5px solid #f39c12;
+}
+
+.turn-indicator.winner {
+    color: #ffffff;
+    background-color: #27ae60;
+    border-left: 5px solid #2ecc71;
+}
+
+.turn-indicator.draw {
+    color: #ffffff;
+    background-color: #7f8c8d;
+    border-left: 5px solid #95a5a6;
+}
+
 #board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -5,12 +79,30 @@
     gap: 10px;
     width: 300px;
     height: 300px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .tile {
     background-color: #3498db;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
     transition: background-color 0.3s;
+}
+
+.tile:hover {
+    background-color: #2980b9;
+}
+
+.tile.x {
+    color: #e74c3c;
+}
+
+.tile.o {
+    color: #f39c12;
 }

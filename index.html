@@ -8,13 +8,20 @@
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
-    <div class="player-names"></div>
-        <h2>Player 1: </h2>
-        <h2>Player 2: </h2>
-    <div id="board">
-
+    <div class="player-names">
+        <div>
+            <label for="player1-name"><b>Player 1 (X): </b></label>
+            <input type="text" id="player1-name" placeholder="Enter name">
+        </div>
+        <div>
+            <label for="player2-name"><b>Player 2 (O): </b></label>
+            <input type="text" id="player2-name" placeholder="Enter name">
+        </div>
     </div>
-    <button id="start-btn">Start Game</button>
+    <div class="button-container">
+        <button id="start-btn">Start Game</button>
+    </div>
+    <div id="board"></div>
     <script src="scripts.js"></script>
 </body>
 </html>
